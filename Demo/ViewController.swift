@@ -13,9 +13,8 @@ class ViewController: NSViewController {
     @IBOutlet var textBox: NSTextField!
     @IBOutlet var collectionView: NSCollectionView!
     @IBAction func btnClick(_ sender: Any) {
-        filteredData = textBox.stringValue == "" ? scratchPads : scratchPads.filter { pad -> Bool in
+        filteredData = textBox.stringValue.isEmpty ? scratchPads : scratchPads.filter { pad -> Bool in
             return pad.title.lowercased().range(of: textBox.stringValue.lowercased()) != nil
-            
         }
         collectionView.reloadData()
     }
