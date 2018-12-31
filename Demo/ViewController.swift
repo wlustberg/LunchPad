@@ -57,7 +57,7 @@ class ViewController: NSViewController {
     
 }
 
-extension ViewController: NSCollectionViewDataSource{
+extension ViewController: NSCollectionViewDataSource {
     
     func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int{
         return filteredData.count
