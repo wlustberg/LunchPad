@@ -704,8 +704,8 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl" customClass="LunchPadView" customModule="Demo" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="233"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
@@ -724,7 +724,7 @@
                                             </collectionViewFlowLayout>
                                             <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <connections>
-                                                <outlet property="dataSource" destination="XfG-lQ-9wD" id="ayG-Tt-iNf"/>
+                                                <outlet property="dataSource" destination="m2S-Jp-Qdl" id="ea8-br-dYL"/>
                                             </connections>
                                         </collectionView>
                                     </subviews>
@@ -747,15 +747,15 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                                 <connections>
-                                    <action selector="textBoxChange:" target="XfG-lQ-9wD" id="DWf-K5-rFj"/>
+                                    <action selector="textBoxChange:" target="m2S-Jp-Qdl" id="MDy-US-zyX"/>
                                 </connections>
                             </textField>
                         </subviews>
+                        <connections>
+                            <outlet property="collectionView" destination="KtR-iW-H93" id="CrI-Jo-l6E"/>
+                            <outlet property="textBox" destination="XSW-uv-i5c" id="EEz-wB-dwE"/>
+                        </connections>
                     </view>
-                    <connections>
-                        <outlet property="collectionView" destination="KtR-iW-H93" id="Gtq-w9-ek2"/>
-                        <outlet property="textBox" destination="XSW-uv-i5c" id="NcC-zb-OBH"/>
-                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

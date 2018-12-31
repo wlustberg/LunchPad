@@ -12,6 +12,7 @@
 		45AC9E0821DAA8150000EF84 /* LunchPad.h in Headers */ = {isa = PBXBuildFile; fileRef = 45AC9DF821DAA8150000EF84 /* LunchPad.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45AC9E0B21DAA8150000EF84 /* LunchPad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45AC9DF621DAA8150000EF84 /* LunchPad.framework */; };
 		45AC9E0C21DAA8150000EF84 /* LunchPad.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 45AC9DF621DAA8150000EF84 /* LunchPad.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		45AC9E1521DAAF390000EF84 /* LunchPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AC9E1421DAAF390000EF84 /* LunchPadView.swift */; };
 		B0578F4421B37FA200FDD223 /* ScatchPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0578F4321B37FA200FDD223 /* ScatchPad.swift */; };
 		B06C0EF421ACB59E00C75521 /* LabelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06C0EF221ACB59E00C75521 /* LabelItem.swift */; };
 		B06C0EF521ACB59E00C75521 /* LabelItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = B06C0EF321ACB59E00C75521 /* LabelItem.xib */; };
@@ -66,6 +67,7 @@
 		45AC9DFE21DAA8150000EF84 /* LunchPadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LunchPadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45AC9E0521DAA8150000EF84 /* LunchPadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchPadTests.swift; sourceTree = "<group>"; };
 		45AC9E0721DAA8150000EF84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45AC9E1421DAAF390000EF84 /* LunchPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchPadView.swift; sourceTree = "<group>"; };
 		B0578F4321B37FA200FDD223 /* ScatchPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScatchPad.swift; sourceTree = "<group>"; };
 		B06C0EF221ACB59E00C75521 /* LabelItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelItem.swift; sourceTree = "<group>"; };
 		B06C0EF321ACB59E00C75521 /* LabelItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelItem.xib; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				B06C0EF221ACB59E00C75521 /* LabelItem.swift */,
 				B0578F4321B37FA200FDD223 /* ScatchPad.swift */,
 				B0F9F658219E238D00A7E70A /* ViewController.swift */,
+				45AC9E1421DAAF390000EF84 /* LunchPadView.swift */,
 				B0F9F656219E238D00A7E70A /* AppDelegate.swift */,
 				B0F9F660219E238D00A7E70A /* Demo.entitlements */,
 				B0F9F65F219E238D00A7E70A /* Info.plist */,
@@ -318,6 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45AC9E1521DAAF390000EF84 /* LunchPadView.swift in Sources */,
 				B0F9F659219E238D00A7E70A /* ViewController.swift in Sources */,
 				B0578F4421B37FA200FDD223 /* ScatchPad.swift in Sources */,
 				B0F9F657219E238D00A7E70A /* AppDelegate.swift in Sources */,
