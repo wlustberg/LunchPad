@@ -22,7 +22,7 @@ class ViewController: NSViewController {
     
     
     @IBAction func textBoxChange(_ sender: Any) {
-        filteredData = textBox.stringValue == "" ? scratchPads : scratchPads.filter { pad -> Bool in
+        filteredData = textBox.stringValue.isEmpty ? scratchPads : scratchPads.filter { pad -> Bool in
             return pad.title.range(of: textBox.stringValue) != nil
         }
         collectionView.reloadData()
@@ -65,7 +65,7 @@ extension ViewController: NSCollectionViewDataSource{
     
     func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
         let item = collectionView.makeItem(withIdentifier:NSUserInterfaceItemIdentifier(rawValue: "LabelItem"), for: indexPath)
-        guard let myItem = item as? LabelItem else {return item}
+        guard let myItem = item as? LabelItem else { return item }
         myItem.scratchPad = filteredData[indexPath.item]
         return myItem
     }

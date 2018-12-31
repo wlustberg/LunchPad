@@ -15,10 +15,10 @@ public class ScratchPad {
         case python
         case ruby
     }
-    public var title :String
-    public var language :Language
+    public var title: String
+    public var language: Language
     
-    public init(title :String, language :Language){
+    public init(title: String, language: Language){
         self.title = title
         self.language = language
     }
