@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1000"
+   LastUpgradeVersion = "1010"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,23 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B0F9F652219E238D00A7E70A"
-               BuildableName = "LunchPad.app"
+               BlueprintIdentifier = "45AC9DF521DAA8150000EF84"
+               BuildableName = "LunchPad.framework"
                BlueprintName = "LunchPad"
+               ReferencedContainer = "container:LunchPad.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "45AC9DFD21DAA8150000EF84"
+               BuildableName = "LunchPadTests.xctest"
+               BlueprintName = "LunchPadTests"
                ReferencedContainer = "container:LunchPad.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,19 +46,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B0F9F664219E238E00A7E70A"
+               BlueprintIdentifier = "45AC9DFD21DAA8150000EF84"
                BuildableName = "LunchPadTests.xctest"
                BlueprintName = "LunchPadTests"
-               ReferencedContainer = "container:LunchPad.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B0F9F66F219E238E00A7E70A"
-               BuildableName = "LunchPadUITests.xctest"
-               BlueprintName = "LunchPadUITests"
                ReferencedContainer = "container:LunchPad.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -52,8 +56,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B0F9F652219E238D00A7E70A"
-            BuildableName = "LunchPad.app"
+            BlueprintIdentifier = "45AC9DF521DAA8150000EF84"
+            BuildableName = "LunchPad.framework"
             BlueprintName = "LunchPad"
             ReferencedContainer = "container:LunchPad.xcodeproj">
          </BuildableReference>
@@ -71,16 +75,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B0F9F652219E238D00A7E70A"
-            BuildableName = "LunchPad.app"
+            BlueprintIdentifier = "45AC9DF521DAA8150000EF84"
+            BuildableName = "LunchPad.framework"
             BlueprintName = "LunchPad"
             ReferencedContainer = "container:LunchPad.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -90,16 +93,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B0F9F652219E238D00A7E70A"
-            BuildableName = "LunchPad.app"
+            BlueprintIdentifier = "45AC9DF521DAA8150000EF84"
+            BuildableName = "LunchPad.framework"
             BlueprintName = "LunchPad"
             ReferencedContainer = "container:LunchPad.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
