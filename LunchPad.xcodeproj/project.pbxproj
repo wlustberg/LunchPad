@@ -12,10 +12,11 @@
 		45AC9E0821DAA8150000EF84 /* LunchPad.h in Headers */ = {isa = PBXBuildFile; fileRef = 45AC9DF821DAA8150000EF84 /* LunchPad.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45AC9E0B21DAA8150000EF84 /* LunchPad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45AC9DF621DAA8150000EF84 /* LunchPad.framework */; };
 		45AC9E0C21DAA8150000EF84 /* LunchPad.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 45AC9DF621DAA8150000EF84 /* LunchPad.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		45AC9E1521DAAF390000EF84 /* LunchPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AC9E1421DAAF390000EF84 /* LunchPadView.swift */; };
-		B0578F4421B37FA200FDD223 /* ScatchPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0578F4321B37FA200FDD223 /* ScatchPad.swift */; };
-		B06C0EF421ACB59E00C75521 /* LabelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06C0EF221ACB59E00C75521 /* LabelItem.swift */; };
-		B06C0EF521ACB59E00C75521 /* LabelItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = B06C0EF321ACB59E00C75521 /* LabelItem.xib */; };
+		45AC9E1621DAB2420000EF84 /* LunchPadItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06C0EF221ACB59E00C75521 /* LunchPadItem.swift */; };
+		45AC9E1721DAB2460000EF84 /* ScatchPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0578F4321B37FA200FDD223 /* ScatchPad.swift */; };
+		45AC9E1821DAB26B0000EF84 /* LunchPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AC9E1421DAAF390000EF84 /* LunchPadView.swift */; };
+		45AC9E1A21DD63760000EF84 /* LunchPadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45AC9E1921DD63760000EF84 /* LunchPadView.xib */; };
+		45AC9E1D21DD979C0000EF84 /* LunchPadItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = B06C0EF321ACB59E00C75521 /* LunchPadItem.xib */; };
 		B0F9F657219E238D00A7E70A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F9F656219E238D00A7E70A /* AppDelegate.swift */; };
 		B0F9F659219E238D00A7E70A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F9F658219E238D00A7E70A /* ViewController.swift */; };
 		B0F9F65B219E238D00A7E70A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0F9F65A219E238D00A7E70A /* Assets.xcassets */; };
@@ -68,9 +69,10 @@
 		45AC9E0521DAA8150000EF84 /* LunchPadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchPadTests.swift; sourceTree = "<group>"; };
 		45AC9E0721DAA8150000EF84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45AC9E1421DAAF390000EF84 /* LunchPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchPadView.swift; sourceTree = "<group>"; };
+		45AC9E1921DD63760000EF84 /* LunchPadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LunchPadView.xib; sourceTree = "<group>"; };
 		B0578F4321B37FA200FDD223 /* ScatchPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScatchPad.swift; sourceTree = "<group>"; };
-		B06C0EF221ACB59E00C75521 /* LabelItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelItem.swift; sourceTree = "<group>"; };
-		B06C0EF321ACB59E00C75521 /* LabelItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelItem.xib; sourceTree = "<group>"; };
+		B06C0EF221ACB59E00C75521 /* LunchPadItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchPadItem.swift; sourceTree = "<group>"; };
+		B06C0EF321ACB59E00C75521 /* LunchPadItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LunchPadItem.xib; sourceTree = "<group>"; };
 		B0F9F653219E238D00A7E70A /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F9F656219E238D00A7E70A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0F9F658219E238D00A7E70A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +112,11 @@
 		45AC9DF721DAA8150000EF84 /* LunchPad */ = {
 			isa = PBXGroup;
 			children = (
+				B06C0EF221ACB59E00C75521 /* LunchPadItem.swift */,
+				B06C0EF321ACB59E00C75521 /* LunchPadItem.xib */,
+				45AC9E1421DAAF390000EF84 /* LunchPadView.swift */,
+				45AC9E1921DD63760000EF84 /* LunchPadView.xib */,
+				B0578F4321B37FA200FDD223 /* ScatchPad.swift */,
 				45AC9DF821DAA8150000EF84 /* LunchPad.h */,
 				45AC9DF921DAA8150000EF84 /* Info.plist */,
 			);
@@ -148,16 +155,12 @@
 		B0F9F655219E238D00A7E70A /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				B06C0EF221ACB59E00C75521 /* LabelItem.swift */,
-				B0578F4321B37FA200FDD223 /* ScatchPad.swift */,
 				B0F9F658219E238D00A7E70A /* ViewController.swift */,
-				45AC9E1421DAAF390000EF84 /* LunchPadView.swift */,
 				B0F9F656219E238D00A7E70A /* AppDelegate.swift */,
 				B0F9F660219E238D00A7E70A /* Demo.entitlements */,
 				B0F9F65F219E238D00A7E70A /* Info.plist */,
 				B0F9F65C219E238D00A7E70A /* Main.storyboard */,
 				B0F9F65A219E238D00A7E70A /* Assets.xcassets */,
-				B06C0EF321ACB59E00C75521 /* LabelItem.xib */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -279,6 +282,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45AC9E1A21DD63760000EF84 /* LunchPadView.xib in Resources */,
+				45AC9E1D21DD979C0000EF84 /* LunchPadItem.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +298,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B06C0EF521ACB59E00C75521 /* LabelItem.xib in Resources */,
 				B0F9F65B219E238D00A7E70A /* Assets.xcassets in Resources */,
 				B0F9F65E219E238D00A7E70A /* Main.storyboard in Resources */,
 			);
@@ -306,6 +310,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45AC9E1621DAB2420000EF84 /* LunchPadItem.swift in Sources */,
+				45AC9E1821DAB26B0000EF84 /* LunchPadView.swift in Sources */,
+				45AC9E1721DAB2460000EF84 /* ScatchPad.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,11 +328,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45AC9E1521DAAF390000EF84 /* LunchPadView.swift in Sources */,
 				B0F9F659219E238D00A7E70A /* ViewController.swift in Sources */,
-				B0578F4421B37FA200FDD223 /* ScatchPad.swift in Sources */,
 				B0F9F657219E238D00A7E70A /* AppDelegate.swift in Sources */,
-				B06C0EF421ACB59E00C75521 /* LabelItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,6 +581,7 @@
 		B0F9F67A219E238E00A7E70A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Demo/Demo.entitlements;
 				CODE_SIGN_IDENTITY = "-";
@@ -598,6 +603,7 @@
 		B0F9F67B219E238E00A7E70A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Demo/Demo.entitlements;
 				CODE_SIGN_IDENTITY = "-";

@@ -8,7 +8,7 @@
 
 import Cocoa
 
-public class LabelItem: NSCollectionViewItem {
+public class LunchPadItem: NSCollectionViewItem {
 
     var scratchPad: ScratchPad? {
         didSet {

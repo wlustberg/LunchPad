@@ -7,4 +7,14 @@
 //
 
 import Cocoa
+import LunchPad
 
+class ViewController: NSViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let lunchPadView = LunchPadView(frame: view.bounds)
+        lunchPadView.autoresizingMask = [.width, .height]
+        view.addSubview(lunchPadView)
+    }
+}

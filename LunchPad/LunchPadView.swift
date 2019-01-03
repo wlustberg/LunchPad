@@ -8,7 +8,19 @@
 
 import Cocoa
 
-class LunchPadView: NSView {
+public class LunchPadView: NSView {
+
+    @IBOutlet var contentView: NSView!
+
+    override public init(frame: CGRect) {
+        super.init(frame: frame)
+        setupContentView()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+
     @IBOutlet var textBox: NSTextField!
     @IBOutlet var collectionView: NSCollectionView!
     @IBAction func btnClick(_ sender: Any) {
@@ -28,8 +40,24 @@ class LunchPadView: NSView {
     var scratchPads = [ScratchPad]()
     var filteredData = [ScratchPad]()
 
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
+        setupCollectionView()
+    }
+
+    // MARK: Private
+
+    private func setupContentView() {
+        let bundle = Bundle(for: type(of:self))
+        guard let nib = NSNib(nibNamed: "LunchPadView", bundle: bundle) else {
+            assert(false)
+            return
+        }
+        nib.instantiate(withOwner: self, topLevelObjects: nil)
+        addSubview(contentView)
+    }
+    
+    private func setupCollectionView() {
         let flowLayout = NSCollectionViewFlowLayout()
         flowLayout.itemSize = NSSize(width: 100.0, height: 100.0)
         flowLayout.sectionInset = NSEdgeInsets(top: 10.0, left: 10.0, bottom: 10.0, right: 10.0)
@@ -44,17 +72,19 @@ class LunchPadView: NSView {
         
         filteredData = scratchPads
     }
+
 }
 
 extension LunchPadView: NSCollectionViewDataSource {
     
-    func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int{
+    public func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int{
         return filteredData.count
     }
     
-    func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
-        let item = collectionView.makeItem(withIdentifier:NSUserInterfaceItemIdentifier(rawValue: "LabelItem"), for: indexPath)
-        guard let myItem = item as? LabelItem else { return item }
+    public func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
+        let item = collectionView.makeItem(withIdentifier:NSUserInterfaceItemIdentifier(rawValue: "LunchPadItem"),
+                                           for: indexPath)
+        guard let myItem = item as? LunchPadItem else { return item }
         myItem.scratchPad = filteredData[indexPath.item]
         return myItem
     }
