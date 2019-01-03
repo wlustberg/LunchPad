@@ -42,7 +42,6 @@
                         <constraint firstItem="maH-ab-8Sf" firstAttribute="centerX" secondItem="ZmX-2S-jJw" secondAttribute="centerX" id="GDB-CS-Lne"/>
                         <constraint firstItem="maH-ab-8Sf" firstAttribute="centerY" secondItem="ZmX-2S-jJw" secondAttribute="centerY" id="JS5-Uq-VHd"/>
                         <constraint firstAttribute="height" constant="75" id="Ulb-Da-gyt"/>
-                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="75" id="lDR-fP-DiC"/>
                         <constraint firstItem="maH-ab-8Sf" firstAttribute="centerX" secondItem="ZmX-2S-jJw" secondAttribute="centerX" id="wgT-NL-zf6"/>
                     </constraints>
                 </customView>
